@@ -28,6 +28,4 @@ public interface Engine {
 
   public void setEngineType(String fuel);
 
-
-
 }

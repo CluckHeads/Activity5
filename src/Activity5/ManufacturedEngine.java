@@ -32,15 +32,15 @@ public class ManufacturedEngine implements Engine {
     engineManufacturedDate = new Date();
     engineMake = "Generic";
     engineModel = "Generic";
-    engineType = "85 AKI";
+    engineType = "Generic";
     engineCylinders = 0;
-    driveTrain = "2WD: Two-Wheel Drives";
+    driveTrain = "Generic";
   }
 
 
   //  A public overloaded constructor with values for all of the variables defined above
   public ManufacturedEngine(String engineManufacturer, Date engineManufacturedDate, String engineMake,
-                            String engineModel, int engineCylinders, String engineType, String driveTrain) {
+                            String engineModel, String engineType, int engineCylinders,  String driveTrain) {
     this.engineManufacturer = engineManufacturer;
     this.engineManufacturedDate = engineManufacturedDate;
     this.engineMake = engineMake;
@@ -50,18 +50,16 @@ public class ManufacturedEngine implements Engine {
     this.driveTrain = driveTrain;
   }
 
-
-
   //  Still need to figure out how to print the correct output
   @Override
   public String toString() {
-    return "Engine Manufacturer : " + engineManufacturer + "\n"
-            + "Engine Manufactured : " + engineManufacturedDate + "\n"
-            + "Engine Make : " + engineMake + "\n"
-            + "Engine Model : " + engineModel + "\n"
-            + "Engine Type : " + engineType + "\n"
-            + "Engine Cylinders : " + engineCylinders + '\n'
-            + "Drive Train : " + driveTrain + '\n';
+    return "Engine Manufacturer      : " + engineManufacturer + "\n"
+         + "Engine Manufactured      : " + engineManufacturedDate + "\n"
+         + "Engine Make              : " + engineMake + "\n"
+         + "Engine Model             : " + engineModel + "\n"
+         + "Engine Type              : " + engineType + "\n"
+         + "Engine Cylinders         : " + engineCylinders + '\n'
+         + "Drive Train              : " + driveTrain;
   }
 
   public String getEngineManufacturer() {
@@ -126,8 +124,5 @@ public class ManufacturedEngine implements Engine {
   public void setDriveTrain(String driveTrain) {
     this.driveTrain = driveTrain;
   }
-
-
-
 
 }

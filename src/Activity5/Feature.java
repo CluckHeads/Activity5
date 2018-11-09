@@ -14,6 +14,6 @@ public interface Feature {
 
   public String getFeature();
 
-  public String setFeature(String feature);
+  public void setFeature(String feature);
 
 }
